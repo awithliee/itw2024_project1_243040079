@@ -7,6 +7,7 @@ body
     box-sizing: border-box;
     background-color: rgb(33, 29, 29);
     color: white;
+    overflow-x: hidden;
 }
 
 /* page 1 */
@@ -16,7 +17,7 @@ nav{
     position: fixed;
     z-index: 100;
     display: flex;
-    background:BLACK;
+    border-image: fill 0 linear (#0001, #000) ;
     justify-content: space-around;
     padding: 1px 0;
     align-items: center;
@@ -27,7 +28,7 @@ nav{
 .home{
     width: 100%;
     height: 100vh;
-    background-image: url(img/bg\ cover.png);
+    background-image: url(img/bg/bg\ cover.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -36,14 +37,14 @@ nav{
 }
 
 .logo{
-    width: 110px;
+    width: 50%;
     
 }
 
 nav ul{
     display: flex;
     list-style: none;
-    width: 40%;
+    width: 30%;
     justify-content: space-between;
 }
 
@@ -55,7 +56,7 @@ nav ul li a{
 }
 
 nav ul li a:hover,nav a.active{
-    color: #01a131;
+    color: lightskyblue;
 }
 
 
@@ -63,7 +64,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: green;
+    background: darkslateblue;
     position: absolute;
     left: 50%;
     bottom: -5px;
@@ -77,7 +78,7 @@ nav ul li a:hover::after{
 }
 
 /* hamburger menu */
-.menu-toggle{
+.toggle{
     display: none;
     flex-direction: column;
     height: 20px;
@@ -85,7 +86,7 @@ nav ul li a:hover::after{
     position: relative;
 }
 
-.menu-toggle input{
+.toggle input{
     position: absolute;
     width: 40px;
     height: 28px;
@@ -97,7 +98,7 @@ nav ul li a:hover::after{
 }
 
 
-.menu-toggle span{
+.toggle span{
     display: block;
     width: 25px;
     height: 3px;
@@ -106,23 +107,23 @@ nav ul li a:hover::after{
     transition: all .5s;
 }
 
-/* animasi hamburger */
-.menu-toggle span:nth-child(2){
+/*  hamburger */
+.toggle span:nth-child(2){
     transform-origin: 0 0;
 }
-.menu-toggle span:nth-child(4){
+.toggle span:nth-child(4){
     transform-origin: 0 100%;
 }
 
-.menu-toggle input:checked ~ span:nth-child(2){
+.toggle input:checked ~ span:nth-child(2){
     background-color: white;
     transform: rotate(45deg) translate(.5px, -1px);
 }
-.menu-toggle input:checked ~ span:nth-child(4){
+.toggle input:checked ~ span:nth-child(4){
     background-color: white;
     transform: rotate(-45deg) translate( 1px, 1px);
 }
-.menu-toggle input:checked ~ span:nth-child(3){
+.toggle input:checked ~ span:nth-child(3){
     opacity: 0;
     transform: scale(0);
 }
@@ -135,7 +136,7 @@ nav ul li a:hover::after{
    position: relative;
    font-weight: bold;
    font-size: 60px;
-   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.671);
 
 }
 .headerhome{
@@ -143,45 +144,45 @@ animation: HeaderIn 3s;
 }
 
  .hello{
-   top: 144px;
+   top: 195px;
    left: 75px;;
     color:white;
  }
 
  .student{
-   top: 20px;;
+   top: 125px;
    left: 220px;
-    color: wheat;
+    color: deepskyblue;
 
  }
 
  .univ{
-   bottom: 35px;
-   left: 150px;
+    top: 100px;
+    left: 75px;
     color: #1F4529;
  }
 
  .pasundan{
-   bottom: 159px;
-   left: 425px;
-    color: wheat;
+    bottom:-25px;
+    left: 353px;
+    color: #1F4529;
  }
 
  .name{
-   bottom: 215px;
-   left: 75px;
+   top: 5px;
+    left: 75px;
     color: white;
  }
 
  .ali{
-   bottom: 339px;
-   left: 335px;
-    color: wheat;
+bottom: 70px;
+left: 340px;
+    color:deepskyblue;
  }
 
  .deskripsi{
    position: relative;
-   bottom: 400px;
+   bottom: 70px;
    left: 100px;
    color: white;
    width: 30%;
@@ -191,6 +192,8 @@ animation: HeaderIn 3s;
 
  
 .h-ikon{
+  position: relative;
+  left: 230px;
   gap: 1rem;
   display: flex;
   flex-direction: row;
@@ -199,8 +202,8 @@ animation: HeaderIn 3s;
 .ikon-home a{
   min-width: 50px;
   height: 50px;
-  color: rgb(254, 252, 252);
-  background-color: green;
+  color: black;
+  background-color: blue;
   display: flex;
   justify-content: center;
   border-radius: 50%;
@@ -209,12 +212,474 @@ animation: HeaderIn 3s;
 }
 
 .ikon-home a:hover{
-  color: #01a131;
-  background-color: #eaeaea;
+  color: lightblue;
+  background-color: black;
   cursor: pointer;
 }
 
+.hire{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    padding: 18px;
+    width: 40px;
+    border-radius: 28px;
+    background-color: lightblue
+}
 
+.hire:hover{
+    color: white;
+    background-color: blue;
+}
+
+
+.btn-hire{
+    position: relative;
+    bottom: 110px;
+    left: 267px;
+}
+/*home finish*/
+
+/* HAL 2 */
+
+.about-img img{
+    position: relative;
+    top: 20px;
+    width: 200px;
+    border-radius: 20%;
+    box-shadow: -5px 5px 20px blue;
+    margin-right: 20%;
+    border: 5px solid lightblue;
+}
+ .about{
+    display: flex;
+    justify-content: center;
+} 
+
+.header-about span{
+    color: lightskyblue;
+}
+
+h2, h3, p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.header-about{
+    font-size: 40px;
+}
+
+.about-content{
+    gap: 2rem;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.basel{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 12px;
+    width: 140px;
+    border-radius: 50px;
+    background-color: lightblue
+}
+
+.basel:hover{
+    color: white;
+    background-color: blue;
+}
+
+
+.btn-about{
+    position: relative;
+    top: 20px;
+}
+
+.overlay{
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0,0,0,0);
+    z-index:9999;
+    transition: .8s;
+}
+
+.overlay:target{
+    width: auto;
+    height: auto;
+    bottom: 0;
+    right: 0;
+    background: rgba(0,0,0,.8);
+    text-align: center;
+    padding: 100px;
+    
+}
+
+.overlay img{
+    max-height: 100%;
+    border-radius: 0;
+    box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+
+.overlay:target img{
+    animation: ImageIn 1.5s;
+}
+
+.overlay .close{
+    text-decoration: none;
+    border-radius: 10%;
+    background-color: #eaeaea;
+    color: #312f2f;
+    top: 70px;
+    position: absolute;
+    
+}
+
+.overlay:target .close{
+    animation: HeaderIn .5s .5s forwards;
+}
+
+/*HAL 3*/
+
+.skill-content{
+    padding: 5px;
+}
+
+.header-skill{
+    color: rgb(23, 102, 227);
+    text-align: center;
+    padding: 25px;
+}
+
+.header-skill h1{
+    position: relative;
+    bottom: -10px;
+}
+
+.container-skill{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    padding: 20px 80px;
+    font-size: 19px;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+}
+
+.skill-box{
+    background-color:#074799 ;
+    height: 160px;
+    font-size: 12px;
+    padding: 16px;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.skill-box:hover{
+    background-color:#4A628A;
+}
+
+
+.foto-skill{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.img-skill{
+    width: 60px;
+    height: 60px;
+    position: relative;
+    border-radius: 50px;
+    background-color:#295F98 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-skill:hover{
+    background-color: white;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+/* ----------------skill finish---------- */
+
+
+/*HAL 4*/
+
+.project{
+    display: flex;
+    justify-content:center;
+}
+
+.pro-title{
+    text-align: center;
+    margin-top: 80px;
+    color: #074799;
+}
+.pro-list{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    flex-wrap:wrap;
+}
+
+.projek{
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;   
+    width:70vh; 
+}
+
+.projek img{
+    width:70vh; 
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width:70vh;
+    height: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #7BD3EA);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.layer-2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width:70vh;
+    height: 333px;
+    border-radius: 10px;
+    background: transparent;
+    backdrop-filter: blur(2px);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    transition: height 0.5s;
+}
+
+.layer h3{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.layer p{
+    width: 200px;
+}
+
+.projek:hover img{
+    transform: scale(1.1);
+}
+
+.projek:hover .layer{
+    height: 333px;
+}
+
+.projek:hover .layer-2{
+    height: 0;
+}
+
+.lise{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 12px;
+    width: 140px;
+    border-radius: 50px;
+    background-color: #2525255F;
+}
+
+.lise:hover{
+    color: #295F98;
+    background-color: aliceblue;
+}
+
+
+.btn-lihat{
+    position: relative;
+    top: 20px;
+}
+
+/*contact*/
+/* ----------contact--------- */
+
+.contact{
+    padding: 50px 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(img/bg/bg\ contacct.png);
+    background-size: cover;
+    flex-wrap: wrap;
+}
+
+.contact .konten{
+    max-width: 800px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.konten h2{
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+
+.container-contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.kontakinfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bokontak{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.ikon {
+    min-width: 50px;
+    height: 50px;
+    color: black;
+    background-color:blue;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+}
+
+.ikon:hover{
+    background-color: lightskyblue;
+    color: black;
+}
+
+.text-contact{
+    display: flex;
+    margin-left: 23px;
+    font-size: 16px;
+    flex-direction: column;
+}
+
+.text-contact h3{
+    color: blueviolet;
+}
+
+.text-contact p{
+    margin-top: -4px;
+    font-size: 12px;
+}
+
+.kontakform{
+    width: 30%;
+    padding: 30px;
+    background-color: white;
+}
+
+.kontakform h2{
+    font-size: 20px;
+    color: lightskyblue;
+    font-weight: bolder;
+}
+
+.inputbox{
+    position: relative;
+    width: 100%;
+    color: black;
+    margin-top: 10px;
+    font-size: 10px;
+}
+
+.inputbox input,
+.inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 10px;
+    margin: 5px 0;
+    border: none;
+    border-bottom: 1px solid black;
+    outline: none;
+    resize: none;  
+}
+
+.inputbox span{
+    position: absolute;
+    left: 0;
+    padding: 3px 0;
+    font-size: 10px;
+    margin: 10px 0;
+    transition: 0.5s;
+    pointer-events: none;
+    color: rgb(133, 132, 132);
+}
+
+.inputbox input:focus ~ span,
+.inputbox input:valid ~ span,
+.inputbox textarea:focus ~ span,
+.inputbox textarea:valid ~ span{
+    font-size: 8px;
+    color: blue;
+    transform: translateY(-15px);
+}apa 
+
+
+footer {
+    background-color: #312f2f;
+    padding: 10px;
+  }
+  
+footer .copy{
+    color: #eaeaea;
+    text-align: center;
+    font-size: 12px;
+  }
+
+
+/*Animasi*/
 
  @keyframes HeaderIn{
   from{
@@ -224,3 +689,193 @@ animation: HeaderIn 3s;
       transform: translateX(0);
   }
 }
+
+
+  @keyframes ImageIn{
+
+    from{
+        transform: translateX(-100%);
+    }
+    to{
+        transform: translateX(0);
+    }
+    
+  }
+
+
+/*Responsive*/
+/* ukuran tablet */
+@media screen and (max-width: 768px) {
+    nav ul{
+        width: 35%;
+    }
+    
+    .deskripsi{
+      font-size: 30px;
+      width: 60%;
+    }
+        
+
+    .box{
+        max-width: 250px;
+        max-height: 250px;
+        position: absolute;
+        left: -250px;
+        
+    }
+
+    .text-about{
+        max-width: 400px;
+    }
+
+
+    .container-contact{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    
+    .container-contact .kontakinfo{
+        width: 100%;
+    }
+
+    .container-contact .kontakform{
+        width: 100%;
+    }
+
+}
+
+/* ukuran mobile */
+ @media screen and (max-width: 576px) {
+    .toggle{
+        display: flex;
+    }
+
+    .logo{
+        position: relative;
+        right: 40px;
+    }
+    nav ul{width: 40%;
+    } 
+
+    @media screen and (max-width: 576px) {
+       .toggle{
+           display: flex;
+       }
+
+       .logo{
+        position: relative;
+        right: 40px;
+    }
+    
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 60vh;
+        width: 20%;
+        flex-direction: column;
+        border-image: fill 0 linear (#0001, #000) ;
+        align-items: center;
+        justify-content: space-evenly;
+        z-index: -1;
+        transform: translateY(-100%);
+        transition: all 1s;
+        opacity: 0;
+        
+    }
+    
+    nav ul.slide{
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+
+
+
+    .hello, .student, .univ, .pasundan, .name, .ali{
+    font-size: 30px;
+    }
+    .hello{
+    top: 100px;
+    }
+    .student{
+    top: 60px;
+    left: 150px;
+    }
+    .univ{
+    top: 50px;
+    }
+    .pasundan{
+    top: 8px;
+    left: 215px;
+    }
+    .name{
+    top: -2px;
+    }
+    .ali{
+    top: -44px;
+    left:208px;
+    }
+    .deskripsi{
+       width:540px;
+       left: -45px;
+       bottom: 40px;
+    }
+
+    
+
+
+    .about-content{
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+
+    .text-about{
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .container-contact .kontakinfo{
+        width: 100%;
+    }
+
+    .overlay img{
+        width: 250px;
+        margin-left: -80px;
+    }
+
+
+    .headerhome .h-ikon{
+        gap: 3rem;
+        display: flex;
+        width: 50px;
+        top: 100px;
+        left: 120px;
+    }
+     .btn-hire ,.btn-hire{
+        bottom: 50px;
+        left: 185px;
+        font-size: 5px;
+    }
+}
+    .projek{
+        width: 60vh;
+    }
+    .layer{
+        width: 60vh;
+
+    }
+    .layer-2{
+    width: 60vh;
+    }
+
+ }
