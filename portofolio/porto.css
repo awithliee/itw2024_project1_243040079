@@ -682,8 +682,6 @@ h2, h3, p{
     color: blue;
     transform: translateY(-15px);
 }
-
-
 footer {
     background-color: #312f2f;
     padding: 10px;
@@ -853,7 +851,10 @@ footer .copy{
         width: 100%;
     }
 
-
+.header-about{
+    bottom: 40px;
+    left: 5px;
+}
     .text-about{
         max-width: 300px;
         display: flex;
