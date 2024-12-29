@@ -39,6 +39,7 @@ nav{
     
 }
 
+
 .logo{
     width: 50%;
     
@@ -556,7 +557,6 @@ h2, h3, p{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-image: url(img/bg/bg\ contacct.png);
     background-size: cover;
     flex-wrap: wrap;
 }
@@ -565,6 +565,7 @@ h2, h3, p{
     max-width: 800px;
     text-align: center;
     margin-top: 50px;
+    color: rgb(23, 102, 227)
 }
 
 .konten h2{
@@ -645,6 +646,7 @@ h2, h3, p{
     color: black;
     margin-top: 10px;
     font-size: 10px;
+
 }
 
 .inputbox input,
@@ -657,6 +659,7 @@ h2, h3, p{
     border-bottom: 1px solid black;
     outline: none;
     resize: none;  
+   
 }
 
 .inputbox span{
@@ -669,10 +672,7 @@ h2, h3, p{
     pointer-events: none;
     color: rgb(133, 132, 132);
 }
-.send{
-    background-color: blueviolet;
-    cursor: pointer;
-}
+
 
 .inputbox input:focus ~ span,
 .inputbox input:valid ~ span,
