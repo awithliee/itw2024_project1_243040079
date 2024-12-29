@@ -1,13 +1,16 @@
-html,
-body
-{
+*{
     margin: 0;
-    padding: 0;
+    padding: 0;   
+}
+
+
+body{
     font-family:"Bebas Neue", serif;
     box-sizing: border-box;
     background-color: rgb(33, 29, 29);
     color: white;
     overflow-x: hidden;
+    overflow-y:auto;
 }
 
 /* page 1 */
@@ -256,6 +259,12 @@ left: 340px;
     display: flex;
     justify-content: center;
 } 
+.header-about{
+    position: relative;
+    bottom: 55px;
+    right: 195px;
+    text-shadow: 5px 0 10px red;
+}
 
 .header-about span{
     color: lightskyblue;
@@ -356,6 +365,7 @@ h2, h3, p{
     color: rgb(23, 102, 227);
     text-align: center;
     padding: 25px;
+    font-size: 30px;
 }
 
 .header-skill h1{
@@ -432,6 +442,7 @@ h2, h3, p{
     text-align: center;
     margin-top: 80px;
     color: #074799;
+    font-size: 40px;
 }
 .pro-list{
     display: flex;
@@ -618,12 +629,14 @@ h2, h3, p{
     width: 30%;
     padding: 30px;
     background-color: white;
+    border-radius: 10%;
 }
 
 .kontakform h2{
     font-size: 20px;
     color: lightskyblue;
     font-weight: bolder;
+    text-align: center;
 }
 
 .inputbox{
@@ -656,6 +669,10 @@ h2, h3, p{
     pointer-events: none;
     color: rgb(133, 132, 132);
 }
+.send{
+    background-color: blueviolet;
+    cursor: pointer;
+}
 
 .inputbox input:focus ~ span,
 .inputbox input:valid ~ span,
@@ -664,12 +681,13 @@ h2, h3, p{
     font-size: 8px;
     color: blue;
     transform: translateY(-15px);
-}apa 
+}
 
 
 footer {
     background-color: #312f2f;
     padding: 10px;
+   align-items: center;
   }
   
 footer .copy{
