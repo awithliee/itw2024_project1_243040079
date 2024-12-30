@@ -7,7 +7,7 @@
 body{
     font-family:"Bebas Neue", serif;
     box-sizing: border-box;
-    background-color: rgb(33, 29, 29);
+    background-color: #2C061F;
     color: white;
     overflow-x: hidden;
     overflow-y:auto;
@@ -181,7 +181,7 @@ animation: HeaderIn 3s;
  .ali{
 bottom: 70px;
 left: 340px;
-    color:deepskyblue;
+color:deepskyblue;
  }
 
  .deskripsi{
@@ -191,7 +191,7 @@ left: 340px;
    color: white;
    width: 30%;
    text-align: center;
-   font-size: 20px;
+   font-size: 25px;
  }
 
  
@@ -225,11 +225,12 @@ left: 340px;
     color: black;
     text-decoration: none;
     font-weight: bold;
-    font-size: 28px;
-    padding: 18px;
-    width: 40px;
-    border-radius: 28px;
-    background-color: lightblue
+    font-size: 25px;
+    padding: 15px;
+    border-radius: 80px;
+    background-color: lightblue;
+    width: 200px;
+    transition: 2s ease all;
 }
 
 .hire:hover{
@@ -242,6 +243,7 @@ left: 340px;
     position: relative;
     bottom: 110px;
     left: 267px;
+   
 }
 /*home finish*/
 
@@ -296,7 +298,8 @@ h2, h3, p{
     padding: 12px;
     width: 140px;
     border-radius: 50px;
-    background-color: lightblue
+    background-color: lightblue;
+    transition: 1.5s ease all;
 }
 
 .basel:hover{
@@ -719,6 +722,7 @@ footer .copy{
   }
 
 
+
 /*Responsive*/
 /* ukuran tablet */
 @media screen and (max-width: 768px) {
@@ -836,8 +840,9 @@ footer .copy{
     }
     .deskripsi{
        width:540px;
-       left: -45px;
+       left: -60px;
        bottom: 40px;
+       font-size: 15px;
     }
 
     
